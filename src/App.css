@@ -1,0 +1,22 @@
+input[type=text]{
+  background-color: gainsboro;
+  border-style: none;
+  outline: none;
+  width: 30%;
+  height: 35px;
+}
+button{
+  background-color: rgb(8, 46, 129);
+  border-style: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  height: 35px;
+  width: 5rem;
+
+}
+
+button:hover{
+  opacity: 0.6;
+}
+
